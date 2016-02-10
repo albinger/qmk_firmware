@@ -1,0 +1,6 @@
+vi keymaps/keymap_andrew.c 
+make KEYMAP=andrew
+dfu-programmer ATMEGA32U4 erase
+dfu-programmer ATMEGA32U4 flash planck.hex 
+dfu-programmer ATMEGA32U4 reset
+
